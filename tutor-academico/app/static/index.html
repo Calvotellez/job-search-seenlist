@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutor Académico</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<aside id="sidebar">
+  <h1>📖 Tutor</h1>
+  <ul id="courses"></ul>
+  <form id="course-form">
+    <input name="name" placeholder="Nuevo curso…" required>
+    <select name="profile" id="profile-select"></select>
+    <button>Crear</button>
+  </form>
+</aside>
+<main>
+  <div id="empty">Crea o selecciona un curso para empezar.</div>
+  <section id="course-view" hidden>
+    <header>
+      <h2 id="course-title"></h2>
+      <nav>
+        <button data-tab="chat" class="active">Tutor</button>
+        <button data-tab="material">Material</button>
+        <button data-tab="tasks">Tareas</button>
+        <button data-tab="quiz">Quiz</button>
+      </nav>
+    </header>
+
+    <div class="tab" id="tab-chat">
+      <div id="messages"></div>
+      <form id="chat-form">
+        <textarea name="message" rows="2" placeholder="Pregunta, pega tu borrador o cuéntame tu duda… (Enter envía, Shift+Enter salto de línea)" required></textarea>
+        <button>Enviar</button>
+      </form>
+      <button id="clear-chat" class="link">Borrar conversación</button>
+    </div>
+
+    <div class="tab" id="tab-material" hidden>
+      <p class="hint">Sube tus lecturas, apuntes o guías (PDF, TXT, MD). El tutor responderá citando este material.</p>
+      <form id="upload-form"><input type="file" name="file" accept=".pdf,.txt,.md" required><button>Subir</button></form>
+      <ul id="materials" class="list"></ul>
+    </div>
+
+    <div class="tab" id="tab-tasks" hidden>
+      <form id="task-form">
+        <input name="title" placeholder="Título de la tarea" required>
+        <input name="due" type="date">
+        <textarea name="description" rows="2" placeholder="Instrucciones / rúbrica (opcional)"></textarea>
+        <button>Agregar</button>
+      </form>
+      <ul id="tasks" class="list"></ul>
+    </div>
+
+    <div class="tab" id="tab-quiz" hidden>
+      <form id="quiz-form">
+        <input name="topic" placeholder="Tema (vacío = todo el material)">
+        <input name="n" type="number" min="1" max="15" value="5">
+        <button>Generar quiz</button>
+      </form>
+      <div id="quiz-out" class="box"></div>
+    </div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
