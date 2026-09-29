@@ -7,12 +7,12 @@ Generado el 2026-09-29 a partir de `vacantes_vistas.csv` (58 vacantes). No verif
 | Grupo | Cantidad |
 |---|---|
 | Pendiente de revisar | 37 |
-| Fuera (cerrada, descartada o no aplica) | 14 |
-| En proceso | 4 |
+| Fuera (cerrada, descartada o no aplica) | 15 |
+| En proceso | 3 |
 | Analizada, por decidir | 2 |
 | Por confirmar | 1 |
 
-Valores exactos de `estado`: encontrada (37), descartada (8), cerrada (2), aplicada (2), analizada - sin aplicar (2), analizada (2), prueba técnica (1), por confirmar (1), analizada - no aplicar (1), no aplica - inelegibilidad US declarada (1), entrevista con reclutador (LatamCent) programada (1).
+Valores exactos de `estado`: encontrada (37), descartada (8), cerrada (2), aplicada (2), analizada - sin aplicar (2), analizada (2), prueba técnica (1), por confirmar (1), analizada - no aplicar (1), no aplica - inelegibilidad US declarada (1), rechazada por YipitData (14 sep); sugieren equipo de Integración (1).
 
 ## Pendientes de revisar (37), en orden sugerido
 
@@ -64,7 +64,7 @@ Criterio: 1) elegibilidad según título o link (Colombia, luego LATAM, luego si
 
 - Filas sin link (6): fila 31 Windfall Data (descartada); fila 34 Remote (remote.com) (analizada - sin aplicar); fila 35 Levvy (vía Adlecta BPO) (descartada); fila 36 Twilio (por confirmar); fila 37 Twilio (analizada - no aplicar); fila 38 Inovalon (no aplica - inelegibilidad US declarada).
 - Empresas repetidas: Remote (remote.com) (filas 14, 34); SupportYourApp (filas 18, 19); Twilio (filas 36, 37).
-- Estados con texto libre (no son de la lista base): analizada - no aplicar; analizada - sin aplicar; entrevista con reclutador (LatamCent) programada; no aplica - inelegibilidad US declarada; por confirmar; prueba técnica.
+- Estados con texto libre (no son de la lista base): analizada - no aplicar; analizada - sin aplicar; rechazada por YipitData (14 sep); sugieren equipo de Integración; no aplica - inelegibilidad US declarada; por confirmar; prueba técnica.
 
 ## Portales que la nube no puede abrir hoy
 
